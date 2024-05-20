@@ -6,7 +6,7 @@ import { tap } from 'rxjs';
   providedIn: 'root'
 })
 export class DialogCerrarSesionService {
-  private logoutUrl = 'http://localhost:8000/api/usuario/logout/'; 
+  private logoutUrl = 'http://54.160.74.97:8000/api/usuario/logout/'; 
   constructor(private http: HttpClient) { }
   logout() {
     return this.http.post(this.logoutUrl, {}).pipe(

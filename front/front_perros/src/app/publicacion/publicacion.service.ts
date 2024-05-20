@@ -9,7 +9,7 @@ export class PublicacionService {
   constructor(private http: HttpClient) {}
 
   obtenerPublicaciones(): Observable<any> {
-    return this.http.get('http://localhost:8000/api/publicaciones/');
+    return this.http.get('http://54.160.74.97:8000/api/publicaciones/');
   }
 
   agregarPublicacionAFavoritos(publicacionId: number, usuarioId: number): Observable<any> {
@@ -20,6 +20,6 @@ export class PublicacionService {
     };
   
     // Realizar una solicitud POST para agregar la publicación a favoritos
-    return this.http.post(`http://localhost:8000/api/publicaciones/${publicacionId}/favorito/`, data);
+    return this.http.post(`http://54.160.74.97:8000/api/publicaciones/${publicacionId}/favorito/`, data);
   }
 }

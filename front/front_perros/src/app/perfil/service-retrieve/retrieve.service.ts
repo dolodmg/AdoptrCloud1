@@ -96,7 +96,7 @@ export class RetrieveService {
   }
 
   editarPerfil(perfilId: number, perfilData: any): Observable<any> {
-    const url = `http://localhost:8000/api/usuario/mi-perfil/${perfilId}/`;
+    const url = `http://54.160.74.97:8000/api/usuario/mi-perfil/${perfilId}/`;
     return this.http.put(url, perfilData)
   }
   refreshToken(): Observable<string | null> {

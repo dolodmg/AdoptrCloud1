@@ -9,14 +9,14 @@ export class MisPublicacionesService {
   constructor(private http: HttpClient) {}
 
   obtenerPublicaciones(): Observable<any> {
-    return this.http.get('http://localhost:8000/api/publicaciones/');
+    return this.http.get('http://54.160.74.97:8000/api/publicaciones/');
   }
   editarPublicacion(id: number, datosEditados: any) {
-    const url = `http://localhost:8000/api/publicaciones/${id}/`;
+    const url = `http://54.160.74.97:8000/api/publicaciones/${id}/`;
     return this.http.put(url, datosEditados);
   }
   eliminarPublicacion(id: number) {
-    const url = `http://localhost:8000/api/publicaciones/eliminar/${id}/`;
+    const url = `http://54.160.74.97:8000/api/publicaciones/eliminar/${id}/`;
 
     return this.http.delete(url);
   }

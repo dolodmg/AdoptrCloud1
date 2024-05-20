@@ -10,7 +10,7 @@ export class FormpubliService {
   constructor(private http: HttpClient) {}
 
   altaPublicacion(perro: any): Observable<any> {
-    const url = 'http://localhost:8000/api/publicaciones/alta/';
+    const url = 'http://54.160.74.97:8000/api/publicaciones/alta/';
     
     return this.http.post(url, perro);
   }

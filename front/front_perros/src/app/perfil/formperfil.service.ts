@@ -10,12 +10,12 @@ export class FormperfilService {
   constructor(private http: HttpClient) {}
 
   altaPerfil(perfil: any): Observable<any> {
-    const url = 'http://localhost:8000/api/perfil/alta/';
+    const url = 'http://54.160.74.97:8000/api/perfil/alta/';
     
     return this.http.post(url, perfil);
   }
   editarPerfil(id: number, datosEditados: any) {
-    const url = `http://localhost:8000/api/usuario/mi-perfil/${id}/`;
+    const url = `http://54.160.74.97:8000/api/usuario/mi-perfil/${id}/`;
     return this.http.put(url, datosEditados);
   }
 }
