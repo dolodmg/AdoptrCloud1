@@ -1,9 +1,8 @@
 # Proyecto-Agiles
-
+<h1>Adoptr🐩🐶🐕</h1>
 <h2>Integrantes:</h2> 
-<li>Dolores Dominguez</li>
-<li>Franco Kral</li>
-<h2>Objetivo</h2>
+<li>🙋Dolores Dominguez</li>
+<li>🙋‍♂️Franco Kral</li>
 Nuestro proyecto surge de la idea de crear una aplicación dedicada al rescate y adopcion de perros, para que cada persona pueda encontrar la mascota que mejor se adapte a su estilo de vida, fomentando la adopción responsable y que cada perro encuentre su hogar ideal.
 
 <h2>Comandos necesarios</h2>
@@ -45,9 +44,12 @@ ng serve -o
 
 ```
 ```
-pip install psycopg2
+### Para RDS
+pip install psycopg2 
 pip install psycopg2-binary
-pip install boto3
-pip install django-storages
+
+### Para S3
+pip install boto3 ### Permite la interacción del proyecto en Django con el bucket de S3
+pip install django-storages ### Facilita el uso de almacenamiento externo
 
 ```
