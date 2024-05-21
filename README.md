@@ -44,12 +44,15 @@ ng serve -o
 
 ```
 ```
+```
 ### Para RDS
+```
 pip install psycopg2 
 pip install psycopg2-binary
-
+```
 ### Para S3
-pip install boto3 ### Permite la interacción del proyecto en Django con el bucket de S3
-pip install django-storages ### Facilita el uso de almacenamiento externo
+```
+pip install boto3 - Permite la interacción del proyecto en Django con el bucket de S3
+pip install django-storages - Facilita el uso de almacenamiento externo
 
 ```
