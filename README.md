@@ -43,8 +43,6 @@ python manage.py runserver
 ng serve -o
 
 ```
-```
-```
 ### Para RDS
 ```
 pip install psycopg2 
