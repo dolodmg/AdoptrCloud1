@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-aa$fq&3xlaoex)ho-7_iu=8!8+6jp%&qq*d8%c&c4wxu1_s=vj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['54.160.74.97:80']
 
 
 # Application definition
@@ -80,7 +80,7 @@ CORS_ORIGIN_ALLOW_ALL = True
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:4200",  # Cambia esto al dominio de tu aplicación Angular
+    "http://54.160.74.97:80",  # Cambia esto al dominio de tu aplicación Angular
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
